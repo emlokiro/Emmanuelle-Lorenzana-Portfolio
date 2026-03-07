@@ -1,2 +1,3 @@
 # EMMANUELLE-LORENZANA-PORTFOLIO
-index.html
+#index.html
+#style.css
