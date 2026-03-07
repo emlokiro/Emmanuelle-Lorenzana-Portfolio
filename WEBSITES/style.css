@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    background: url('IMAGE/123.images.png') no-repeat center center fixed;
+    background: url('WEBSITES/IMAGE/123.images.png') no-repeat center center fixed;
     background-size: cover; /* makes image cover the entire page */
     color: #fff; /* text color for contrast */
 }
@@ -281,4 +281,5 @@ footer {
     .navbar ul {
         display: none;
     }
+
 }
