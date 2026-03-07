@@ -1,0 +1,284 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: url('IMAGE/123.images.png') no-repeat center center fixed;
+    background-size: cover; /* makes image cover the entire page */
+    color: #fff; /* text color for contrast */
+}
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 25px 10%;
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff33(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    opacity: 0.6;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    line-height: 1.2;
+}
+
+.hero-text span {
+    color: #ffffff;
+}
+
+.hero-text p {
+    margin-top: 20px;
+    max-width: 500px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 450px;
+    height: auto;
+    border-radius: 0%;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 0 5px 20px #020202a9;
+}
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: #ffffff33;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffffff;
+}
+
+.btn-outline {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #ffffff;
+    color: white;
+}
+
+/* SECTIONS */
+.section {
+    padding: 120px 10%;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+/* ABOUT LAYOUT */
+.about {
+    padding: 100px 10%;          /* spacing around content */
+    background-color: #303030d8;   /* light gray background */
+    color: #ffffffd8;                 /* text color for contrast */
+    text-align: justify;         /* optional, keep text justified */
+}
+
+.container {
+    display: flex;
+    gap: 80px;  
+    align-items: flex-start;
+}
+
+.about-left h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+
+.about-right {
+    max-width: 600px;
+    color: #ffffff;
+}
+/* SKILLS SECTION */
+.skills {
+    margin-top: 80px;
+    background: #303030d8;
+    color: #ffffff;
+}
+
+.skills-container {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.skills-column {
+    min-width: 250px;
+}
+
+.skills-column h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.skills-column ul {
+    list-style: none;
+}
+
+.skills-column li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Elegant bullet */
+.skills-column li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    font-size: 18px;
+}
+/* WORK */
+.projects {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1;
+    min-width: 250px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    background: #303030d8;
+}
+
+.contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+
+.contact p {
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.social-icons a i {
+    color: #ffffff; /* gold color example */
+    transition: 0.3s;
+}
+
+.social-icons a i:hover {
+    color: #ffffff; /* change on hover */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+}
